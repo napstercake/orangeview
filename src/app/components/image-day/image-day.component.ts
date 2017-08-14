@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CoreService } from '../../core/service/core.service';
 
 @Component({
   selector: 'app-image-day',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImageDayComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private coreService :CoreService
+  ) { }
 
   ngOnInit() {
+    this.coreService.getImageOfTheDay()
+      .subscribe(
+        data => this.getData = JSON.stringify(data),
+        error => console.log('some error here'),
+        () => console.log('finished')
+      );
   }
 
 }
