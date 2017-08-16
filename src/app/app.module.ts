@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ImageDayComponent } from './components/image-day/image-day.component';
 import { MenuComponent } from './shared/menu/menu.component';
+import { NotificationComponent } from './shared/notification/notification.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImageDayComponent,
-    MenuComponent
+    MenuComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,

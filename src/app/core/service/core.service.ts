@@ -8,9 +8,9 @@ export class CoreService {
   constructor(private http :Http) { }
 
   getImageOfTheDay() {
-    return this
+    /*return this
       .http.get('someuri') 
-      .map(res => res.json());
+      .map(res => res.json());*/
 
   }
 
