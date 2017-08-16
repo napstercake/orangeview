@@ -16,10 +16,11 @@ export class ImageDayComponent implements OnInit {
 
     //let rt = 'HOOP!';
     //let notificationMessage = new NotificationComponent(rt);
-    var notificationMessage = new NotificationComponent('titleHere');
+    
   }
 
   ngOnInit() {
+    let notificationMessage = new NotificationComponent('titleHere');
     /*this.coreService.getImageOfTheDay()
       .subscribe(
         data => this.getData = JSON.stringify(data),
