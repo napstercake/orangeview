@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { CoreService } from '../../core/service/core.service';
 import { NotificationComponent } from '../../shared/notification/notification.component';
 
-
 @Component({
   selector: 'app-image-day',
   templateUrl: './image-day.component.html',
@@ -20,7 +19,7 @@ export class ImageDayComponent implements OnInit {
   }
 
   ngOnInit() {
-    let notificationMessage = new NotificationComponent('titleHere');
+    //let notificationMessage = new NotificationComponent('titleHere');
     /*this.coreService.getImageOfTheDay()
       .subscribe(
         data => this.getData = JSON.stringify(data),
