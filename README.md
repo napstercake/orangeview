@@ -4,6 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Tasks to do
 
+- investigate how to get select image of the day
+- comment everything that belongs to gallery images
+- implement image of the day
+
+
 
 ## Data
 
