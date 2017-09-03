@@ -1,3 +1,5 @@
-<p>
-  image-day works!!!!
-</p>
+<ul>
+  <li *ngFor="let photo of photos" style="display: inline-block; padding: .5em" >
+    <img [src]="photo.img_src" alt="" style="width:120; height:120px">
+  </li>
+</ul>

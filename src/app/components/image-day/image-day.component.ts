@@ -9,23 +9,19 @@ import { NotificationComponent } from '../../shared/notification/notification.co
 })
 export class ImageDayComponent implements OnInit {
 
+  private photos = [];
+
   constructor(
     private coreService :CoreService
   ) { 
-
-    //let rt = 'HOOP!';
-    //let notificationMessage = new NotificationComponent(rt);
-    
+    console.log('some info around here!')
   }
 
   ngOnInit() {
-    //let notificationMessage = new NotificationComponent('titleHere');
-    /*this.coreService.getImageOfTheDay()
-      .subscribe(
-        data => this.getData = JSON.stringify(data),
-        error => console.log('some error here'),
-        () => console.log('finished')
-      );*/
+    this.coreService.getImageOfTheDay().subscribe(
+      (data) => this.photos = data.photos
+    );
+    
   }
 
 }
